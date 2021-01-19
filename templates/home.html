@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html'%}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+{%block content%}
+<div class="jumbotron d-flex flex-column align-items-center">
 
-<body>
-    <h1>Homepage</h1>
-</body>
+    <h1>URLShort Url Shortener</h1>
+    <a href="{% url 'create'%}"><button type="button" class="btn btn-secondary">Create New URL</button></a>
 
-</html>
+</div>
+
+{% endblock %}

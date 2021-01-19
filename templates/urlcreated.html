@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="alert alert-primary" role="alert">
+    <h1>urlcreated page</h1>
+    <h1>Your Short URL: "{{ request.META.HTTP_HOST }}/{{ chars }}"</h1>
+
+
+</div>
+{% endblock content %}
